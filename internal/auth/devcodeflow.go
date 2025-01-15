@@ -86,7 +86,6 @@ func pollDeviceCodeFlow(ClientID, deviceCode, userAgent string) error {
 
 func GetTknFromDevCode() {
 	clientID := classes.ClientID
-	// scope := classes.Scope
 	resourceURL := classes.ResourceURL
 
 	deviceCode, err := reqDeviceCodeFlow(clientID, resourceURL, classes.UserAgent)
